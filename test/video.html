@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name=“keywords” content=““/>
+<meta name=“description” content=“”/>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+/*----general style----*/
+*{font-family:"Helvetica Neue",Helvetica,Arial,"WenQuanYi Micro Hei","Microsoft Yahei",SimSun,sans-serif!important;margin:0;padding:0}
+/*----helper style----*/
+
+/*----header style----*/
+
+/*----content style----*/
+
+/*----footer style----*/
+</style>
+</head>
+
+<body style="background-color: #fff;">
+<!-- header start -->
+<!-- header end -->
+<!-- content start -->
+          <div class="postcardAct_video" id="video" style="width: 381px;height: 281px;">
+            <!-- <img src="/images/postVideo.jpg" style="width:100%;height:242px;"> -->
+            <div id="a1" style="height:240px;"></div>
+          </div>
+<!-- content end -->
+<!-- footer start -->
+<!-- footer end -->
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="/plugins/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+  var flashvars={
+    f:'http://res.ctibet.cn/normal/video/postcard-20140613.mp4',
+  c:0,
+  b:1
+  };
+var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always'};
+CKobject.embedSWF('/plugins/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','281',flashvars,params);
+var video=['http://res.ctibet.cn/normal/video/postcard-20140613.mp4->video/mp4','http://www.ckplayer.com/webm/0.webm->video/webm','http://www.ckplayer.com/webm/0.ogv->video/ogg'];
+var support=['iPad','iPhone','ios','android+false','msie10+false'];
+  CKobject.embedHTML5('video','ckplayer_a1',380,281,video,flashvars,support);
+</script>
+</body>
+</html>

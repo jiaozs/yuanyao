@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta name=“keywords” content=““/>
+<meta name=“description” content=“”/>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/jiz.css" />
+<!-- <script src="js/jiz.js"></script> -->
+<style type="text/css">
+#jizCarousel {position: relative;overflow: hidden;}
+#jiz-c-prev {left: 15px;background: url(images/png24.png) no-repeat left top;}
+#jiz-c-next {right: 15px;background: url(images/png24.png) no-repeat left -47px;;}
+.jiz-c-inner>a {display: block;width: 45px;height: 45px;position: absolute;top: 138px;filter: alpha(opacity=30);opacity: .5;}
+.jiz-c-inner>a:hover {filter: alpha(opacity=70)!important;opacity: .7!important;}
+.jiz-c-index {position: absolute;height: 12px;width: 200px;right: 18px;bottom: 13px;overflow: hidden;}
+.jiz-c-index a{width: 8px;height: 12px;background: url(images/png24.png) 20px -126px;display:inline-block;overflow: hidden;}
+.jiz-c-index a:hover, .jiz-c-index a.active {background: url(images/png24.png) 35px -126px;width: 12px;}
+</style>
+</head>
+
+<body style="background-color: #fff;">
+<!-- header start -->
+<!-- header end -->
+<!-- content start -->
+<div class="jiz-carousel" id="jizCarousel">
+  <div class="jiz-c-inner">
+    <a href="javascript:void(0);" id="jiz-c-prev"></a>
+    <div class="jiz-pic-view">
+      <a href="#" target="_blank">
+        <img src="images/1.png" width="100%" id="jiz-c-img" data-num="0">
+      </a>
+    </div>
+    <a href="javascript:void(0);" id="jiz-c-next"></a>
+    <div class="jiz-c-index">
+      <a class="active" href="javascript:void(0);"></a>
+      <a href="javascript:void(0);"></a>
+      <a href="javascript:void(0);"></a>
+      <a href="javascript:void(0);"></a>
+      <a href="javascript:void(0);"></a>
+    </div>
+  </div>
+</div>
+<!-- content end -->
+<!-- footer start -->
+<!-- footer end -->
+<!-- <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script> -->
+
+<script type="text/javascript">
+(function(){
+  var carousel = {};
+  window['jiz'] = {};
+  window['jiz']['carousel'] = carousel;
+  function addEventHandler(target, type, func){
+    if(target.addEventListener){
+        //监听IE9，谷歌和火狐
+        target.addEventListener(type, func, false);
+    }else if(target.attachEvent){
+        target.attachEvent("on" + type, func);
+    }else{
+        target["on" + type] = func;
+    }
+  }
+  carousel.init = function(w, h, pic){
+    var node = document.getElementById('jizCarousel');
+    var prev = document.getElementById("jiz-c-prev");
+    var next = document.getElementById("jiz-c-next");
+    var img = document.getElementById("jiz-c-img");
+    var src = img.getAttribute("src");
+    var num = Number(img.getAttribute("data-num"));
+    node.style.width = w + "px";
+    node.style.height = h + "px";
+    addEventHandler(prev, "click", function(){
+      if(num == 0){
+        num = pic.length - 1;
+      }else{
+        num = num - 1;
+      }
+      img.setAttribute("src", pic[num]);
+    });
+    addEventHandler(next, "click", function(){
+      if(num == pic.length - 1){
+        num = 0;
+      }else{
+        num = num + 1;
+      }
+      img.setAttribute("src", pic[num]);
+    });
+  }
+/*  carousel.prototype = {
+    abc :function(){
+      alert(222);
+    }
+  }*/
+})();
+</script>
+
+<script type="text/javascript">
+  (function(){
+    jiz.carousel.init(400,300,
+      [
+        "images/1.png",
+        "images/2.png",
+        "images/3.png",
+        "images/4.png",
+        "images/5.png"
+      ]
+    );
+  })();
+</script>
+</body>
+</html>
