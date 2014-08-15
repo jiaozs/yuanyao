@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+* {font-family: "Helvetica Neue", Helvetica, Arial, "WenQuanYi Micro Hei", "Microsoft Yahei", SimSun, sans-serif!important;margin:0;padding:0;}
+.logo a {
+display: block;
+width: 109px;
+height: 30px;
+background: url(../images/logo.png) 0 2px no-repeat;
+}
+.topBarWrapper {
+  overflow: hidden;
+  padding: 0 19px;
+}
+.topBar_nav {
+  margin-left: 70px;
+  margin-bottom: 0;
+  width: 59%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.topBar_nav>li {
+  float: left;
+  padding: 15px;
+}
+.topBar_nav>li>a,
+.userBar a{
+  color: #5d8828;
+}
+.topBar_nav>li>a:hover,
+.topBar_nav>li>a:focus,
+.topBar_nav>li>a.active {
+  padding-bottom: 4px; 
+  border-bottom: 2px solid #5d8828;
+}
+.logo {
+  padding-left: 0;
+  float: left;
+  margin: 10px 0;
+}
+.userBar {
+  padding: 15px;
+  margin-right: 20px;
+}
+.topBarWrapper,
+.dream_top_bg, 
+.dream_top_bg_pic, 
+.navWrapper, 
+.dream_nav_bg {
+  width: 1007px;
+  margin: 0 auto;
+}
+.dream_top_bg {
+  border-top: 2px solid #5e8828;
+}
+.dream_top_bg_pic {
+  height: 287px;
+}
+.navWrapper {
+  overflow: hidden;
+  background: #4bc4d8;
+}
+.dream_nav_bg {
+  background-color: #79af2b;
+  border-bottom: 2px solid #1b6800;
+}
+.dream_nav_bg>li {
+  border-left: 1px solid #79af2b;
+  border-right: 1px solid #61912f;
+  width: 16.666666666666664%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+.dream_nav_bg>li.active>a,
+.dream_nav_bg>li.active>a:hover, 
+.dream_nav_bg>li.active>a:focus {
+  color: #79af2b;
+  background-color: #fff;  
+}
+.dream_nav_bg>li>a,
+.dream_nav_bg>li>a:hover, 
+.dream_nav_bg>li>a:focus {
+  color: #f9ffe9;
+  background-color: #79af2b;  
+}
+
+#wrapper {
+  width: 1007px;
+/*  background: #fff;*/
+  border: 0;
+  min-height: 300px;
+}
+.dream_act_pic,
+.dream_reg_pic,
+.dream_rid_pic1,
+.dream_rid_pic2,
+.dream_rou_pic,
+.dream_won_pic {
+  float: left;  
+  width: 111px;
+  height: 50px;
+}
+.dream_act_pic {
+  background-image: url(../images/act_detail.png);    
+}
+.dream_reg_pic {
+  background-image: url(../images/reg_detail.png);    
+}
+.dream_rid_pic1 {
+  background-image: url(../images/rid_lore.png);    
+}
+.dream_rid_pic2 {
+  background-image: url(../images/rid_story.png);    
+}
+.dream_rou_pic {
+  background-image: url(../images/rou_detail.png);    
+}
+.dream_won_pic {
+  background-image: url(../images/won_rec.png);    
+}
+.dream_tab_share {
+  margin-top: 11px;
+  float: right;  
+}
+.dream_v_line {
+  border-right: 1px solid #00CC00;
+}
+.dream_h_line {
+  border-bottom: 1px solid #b3d286;
+  margin:15px auto;
+}
+.dream_h_line2 {
+  border-bottom: 1px solid #00CC00;
+  margin:10px auto;
+}
+.dream_h_line3 {
+  border-bottom: 1px dashed #e4e3e3;
+  margin:10px auto;
+}
+.dream_ad_pic1 {
+  width: 213px;
+  height: 137px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-image: url(../images/ad_1.jpg);
+}
+.dream_ad_pic2 {
+  width: 660px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-image: url(../images/ad_2.jpg);
+}
+.dream_act>div>span {
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.dream_act>div>i {
+  display: inline-block;
+  width: 39px;
+  height: 37px;
+  background-image: url(../images/icon_tree.png);
+}
+.dream_act_detail {
+  margin-top: 10px;
+  color: #b0b0b0;
+}
+.dream_act_detail>div>span,
+.dream_act>div span {
+  color: #5d8828;
+}
+.dream_act_more {
+  margin-top: 15px;
+  float: right;
+  color: #0042ff;
+  cursor: pointer;
+}
+.dream_footer>p {
+  text-align:center;
+}
+.dream_rid_show>div, 
+.dream_won_recommen>div {
+  margin:20px 0;
+}
+#table1,
+#table1 th {
+  text-align:center;
+}
+.img-circle {
+  border: 2px solid #7eb226;
+}
+.tab-content,
+.dream_right_content {
+  padding-top: 10px;
+}
+.dream_right_content {
+  background-color: #FAFFDE;
+}
+.dream_act_dynamic>i {
+  float: left;
+  width: 111px;
+  height: 50px;  
+  background-image: url(../images/act_dynamic.png); 
+}
+.dream_co_pic {
+  width: 235px;
+  height: 60px;
+  margin-bottom: 15px;  
+}
+#footer {
+  height: 120px;
+  margin-top: 100px;  
+  border: none;
+  color: #bebebe;
+}
+.dream_enroll_1 {
+  top: 240px;
+  right: 180px;
+  width: 274px;
+  height: 70px;  
+  position: absolute;
+  background-image: url(../images/enroll_1.png);
+  cursor: pointer;
+}
+.dream_enroll_2 {
+  top: 40px;
+  width: 155px;
+  height: 42px;
+  position: relative;
+  background-image: url(../images/enroll_2.png);
+  cursor: pointer;
+}
+.dream_reg_detail h5 {
+  color: #878787;
+}
+.dream_rid_show .img-thumbnail {
+  width: 212px;
+  height: 212px;
+  border:1px solid #7eb226;
+}
+.dream_reg_detail,
+.dream_rid_story,
+.dream_rou_detail {
+  margin-top: 10px;
+}
+.dream_rid_story p,
+.dream_rou_detail p {
+  color: #b0b0b0;
+}
+.dream_rid_story h4,
+.dream_rou_detail h4{
+  color: #0042ff;
+}
+.dream_rid_story h4 span {
+  color: #ff7878;
+}
+.dream_rid_story .img-thumbnail,
+.dream_rou_detail .img-thumbnail {
+  margin-top: 12px;
+}
+.dream_rou_detail h5 {
+  color: #79af2b;
+}
+.dream_rou_detail h5 small {
+  color: #8d8d8d;
+}
+.dream_act_remind {
+  position:relative;
+  width: 27px;
+  height: 16px;
+  background-image: url(../images/act_remind.png);
+  left: 65px;
+  top: -20px;
+  display: inline-block;  
+}
+.dream_act_list>h5>span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 8px;
+  color: #f9ffe9;
+  background-color: #79af2b;
+}
+.dream_act_list>h5 {
+  color: #9b9b9b;
+}
+.dream_act_detail>div>.col-md-10 {
+  left: -50px;
+}
+.dream_black_bg1,
+.dream_black_bg2,
+.dream_black_bg3 {
+  background-image: url(../images/black_transparent.png);
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+.dream_black_bg2 {
+  width: 212px;
+  height: 60px;
+}
+.dream_black_bg3 {
+  width: 333px;
+  height: 60px;
+}
+.dream_rid_story .img-thumbnail,
+.dream_rou_detail .img-thumbnail {
+  width: 168px;
+  height: 125px;
+  max-width: none;  
+  border: 1px solid #7eb226;
+}
+.dream_won_recommen .img-thumbnail {
+  width: 400px; 
+  height: 230px;
+  border: 1px solid #7eb226;  
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta name=“keywords” content=“西藏, 西藏风景, 骑行西藏, 公益骑行, 骑行活动, 一公斤梦想, 西藏旅游, 去西藏, 骑行路线, 旅游资讯, 天上西藏, 走进西藏“/>
+<meta name=“description” content=“天上西藏‘一公斤梦想’公益骑行是一个以公益、环保为主题，倡导旅游者在旅途中为贫困群体赠送爱心礼物，在返程时，带走一公斤垃圾，将洁净和绿色还给西藏的活动。”/>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>一公斤梦想公益骑行-天上西藏网站</title> 
+</head>
+
+<body>
+  <div style="width: 600px; margin-left: 25%; padding-top: 20px;text-align:center">
+    <p>系统将在<span id="cSecond" style="color:#F00">5</span>秒后返回活动首页</p>
+    <p>您也可以关注并参与<a href="#">“行在西藏”活动</a>，来获取丰厚礼品</p>
+  </div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  var wait = setInterval(function changSecond(){
+    var cSecond = $("#cSecond").html();
+    if(cSecond == 0){ 
+      clearInterval(wait);      
+      alert("sss");
+    }else{
+      $("#cSecond").html($("#cSecond").html()-1);
+    }
+  },1000);
+});
+
+</script>
+</html>
